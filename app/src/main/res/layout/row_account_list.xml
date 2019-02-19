@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        >
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="25dp"
+            >
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontal_guideline"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline2"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:id="@+id/circularProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:indeterminateTint="@color/violet_dark"
+
+                app:layout_constraintTop_toTopOf="@+id/horizontal_guideline"
+                app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+                app:layout_constraintRight_toRightOf="@+id/guideline2"
+                />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Wallet"
+                android:textSize="10sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#7e8eaa"
+                />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+
+                android:layout_marginTop="6dp"
+
+                android:text="$2049.95"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#de151c2a"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:layout_marginTop="6dp"
+                android:maxLines="2"
+                android:gravity="right"
+                android:text="-\n32%"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#ee6b8d"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:max="100"
+                android:progress="70"
+                android:progressTint="#ee6b8d"
+                app:layout_constraintTop_toBottomOf="@+id/tvPercent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                 />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

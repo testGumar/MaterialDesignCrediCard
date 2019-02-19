@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        >
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontal_guideline"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_sony_playstation"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+
+            android:fontFamily="@font/roboto_regular"
+            android:text="Sony PlayStations"
+
+            android:textColor="#de151c2a"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+            app:layout_constraintLeft_toRightOf="@+id/imageView1" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="@+id/horizontal_guideline"
+            app:layout_constraintLeft_toRightOf="@+id/imageView1"
+
+            android:text="Fifa 2022 Game"
+            android:textSize="10sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#7e8eaa"
+            />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+
+            android:fontFamily="@font/roboto_medium"
+            android:text="-$53.95"
+
+            android:textColor="#ee6b8d"
+            android:textSize="16sp"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvDate"
+            />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="@+id/horizontal_guideline"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:text="March 14, 2021"
+            android:textSize="10sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#7e8eaa"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--<string name="label_card_number">4444 5555 6666 7777</string>
+    <string name="label_expired_date">MM/YY</string>
+    <string name="label_card_holder">CARD HOLDER</string>
+    <string name="label_cvv_code">CVV CODE</string>
+
+    <string name="hint_card_number">16-DIGIT CARD NUMBER</string>
+    <string name="hint_expired_date">EXPIRED DATE</string>
+    <string name="hint_card_holder">CARD HOLDER</string>
+    <string name="hint_cvv_code">CVV CODE</string>
+
+    <string name="label_secure_submission">Secure Submission</string>-->
+</resources>
